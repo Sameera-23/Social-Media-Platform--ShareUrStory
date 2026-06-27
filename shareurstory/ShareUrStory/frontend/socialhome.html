@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareUrStory Dashboard</title>
+
+    <link rel="stylesheet" href="socialhome.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+    <a href="#" id="logoutBtn">
+    <i class="fas fa-right-from-bracket"></i>
+</a>
+
+    <div class="logo">
+
+        <i class="fas fa-book-open"></i>
+
+        <span>ShareUrStory</span>
+
+    </div>
+
+    <div class="search-box">
+
+        <i class="fas fa-search"></i>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search careers, stories, mentors">
+
+    </div>
+
+    <div class="nav-icons">
+
+        <a href="socialhome.html">
+            <i class="fas fa-house"></i>
+        </a>
+
+        <a href="socialstory.html">
+            <i class="fas fa-pen"></i>
+        </a>
+
+        <a href="socialchat.html">
+            <i class="fas fa-comments"></i>
+        </a>
+
+        <a href="socialnotification.html">
+            <i class="fas fa-bell"></i>
+        </a>
+
+        <a href="socialprofile.html">
+            <i class="fas fa-user"></i>
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- MAIN -->
+
+<div class="dashboard">
+
+    <!-- LEFT -->
+
+    <aside class="sidebar">
+
+        <div class="user-card">
+
+            <img
+            src="https://i.pravatar.cc/150?img=5">
+
+            <h3>Sameera</h3>
+
+            <p>Aspiring Software Developer</p>
+
+        </div>
+
+        <div class="menu">
+
+            <a href="#">
+                <i class="fas fa-compass"></i>
+                Explore Careers
+            </a>
+
+            <a href="socialmentor.html">
+                <i class="fas fa-user-graduate"></i>
+                Mentors
+            </a>
+
+            <a href="#">
+                <i class="fas fa-bookmark"></i>
+                Saved Stories
+            </a>
+
+            <a href="#">
+                <i class="fas fa-trophy"></i>
+                Achievements
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- CENTER -->
+
+    <main class="feed">
+
+        <!-- Quick Story -->
+
+        <div class="quick-post">
+
+            <h2>
+                Share Your Experience
+            </h2>
+
+            <textarea
+            id="quickStory"
+            placeholder="What career lesson did you learn today?"></textarea>
+
+            <button
+            id="publishBtn">
+
+                Publish Story
+
+            </button>
+
+        </div>
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <div class="category">
+                Software Development
+            </div>
+
+            <div class="category">
+                Data Science
+            </div>
+
+            <div class="category">
+                Cyber Security
+            </div>
+
+            <div class="category">
+                UI/UX
+            </div>
+
+            <div class="category">
+                Cloud Computing
+            </div>
+
+            <div class="category">
+                Government Jobs
+            </div>
+
+        </div>
+
+        <!-- Feed -->
+
+        <div id="storyFeed">
+
+            <!-- Dynamic Stories Here -->
+
+        </div>
+
+    </main>
+
+    <!-- RIGHT -->
+
+    <aside class="right-panel">
+
+        <!-- Trending -->
+
+        <div class="widget">
+
+            <h3>
+                Trending Topics
+            </h3>
+
+            <ul>
+
+                <li>#Java</li>
+
+                <li>#SpringBoot</li>
+
+                <li>#DSA</li>
+
+                <li>#Internship</li>
+
+                <li>#Frontend</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Mentors -->
+
+        <div class="widget">
+
+            <h3>
+                Top Mentors
+            </h3>
+
+            <div class="mentor">
+
+                <img
+                src="https://i.pravatar.cc/100?img=20">
+
+                <div>
+
+                    <h4>Priya</h4>
+
+                    <span>
+                        Data Scientist
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="mentor">
+
+                <img
+                src="https://i.pravatar.cc/100?img=21">
+
+                <div>
+
+                    <h4>Arjun</h4>
+
+                    <span>
+                        Java Developer
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Stats -->
+
+        <div class="widget">
+
+            <h3>
+                Community Stats
+            </h3>
+
+            <p>
+                👥 12,000 Members
+            </p>
+
+            <p>
+                📖 2,500 Stories
+            </p>
+
+            <p>
+                🎓 350 Mentors
+            </p>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="socialhome.js"></script>
+
+</body>
+</html>

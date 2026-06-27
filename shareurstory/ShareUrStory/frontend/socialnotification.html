@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - ShareUrStory</title>
+
+    <link rel="stylesheet" href="socialnotification.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fas fa-book-open"></i>
+
+            <span>ShareUrStory</span>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="socialhome.html">
+                <i class="fas fa-house"></i>
+            </a>
+
+            <a href="socialstory.html">
+                <i class="fas fa-pen"></i>
+            </a>
+
+            <a href="socialchat.html">
+                <i class="fas fa-comments"></i>
+            </a>
+
+            <a href="socialprofile.html">
+                <i class="fas fa-user"></i>
+            </a>
+
+        </div>
+         <a href="#" id="logoutBtn">
+    <i class="fas fa-right-from-bracket"></i>
+</a>
+
+    </nav>
+
+    <!-- Notification Section -->
+
+    <main class="notification-container">
+
+        <div class="notification-header">
+
+            <h1>Notifications</h1>
+
+            <button id="clearNotifications">
+
+                Clear All
+
+            </button>
+
+        </div>
+
+        <div id="notificationList">
+
+            <!-- Notification Card -->
+
+            <div class="notification-card like">
+
+                <div class="notification-icon">
+                    ❤️
+                </div>
+
+                <div class="notification-content">
+
+                    <h4>
+                        Rahul liked your story
+                    </h4>
+
+                    <p>
+                        "How I Got My First Internship"
+                    </p>
+
+                    <span>
+                        5 minutes ago
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card comment">
+
+                <div class="notification-icon">
+                    💬
+                </div>
+
+                <div class="notification-content">
+
+                    <h4>
+                        Priya commented on your story
+                    </h4>
+
+                    <p>
+                        Great journey. Very inspiring!
+                    </p>
+
+                    <span>
+                        20 minutes ago
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card follow">
+
+                <div class="notification-icon">
+                    👤
+                </div>
+
+                <div class="notification-content">
+
+                    <h4>
+                        Arjun started following you
+                    </h4>
+
+                    <p>
+                        New follower added
+                    </p>
+
+                    <span>
+                        1 hour ago
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card mentor">
+
+                <div class="notification-icon">
+                    ⭐
+                </div>
+
+                <div class="notification-content">
+
+                    <h4>
+                        Mentor responded to your question
+                    </h4>
+
+                    <p>
+                        Check the latest guidance from Priya
+                    </p>
+
+                    <span>
+                        2 hours ago
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card chat">
+
+                <div class="notification-icon">
+                    📩
+                </div>
+
+                <div class="notification-content">
+
+                    <h4>
+                        New message received
+                    </h4>
+
+                    <p>
+                        Open chat to view message
+                    </p>
+
+                    <span>
+                        Just now
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="socialnotification.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Story - ShareUrStory</title>
+
+    <link rel="stylesheet" href="socialstory.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fas fa-book-open"></i>
+
+            <span>ShareUrStory</span>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="socialhome.html">
+                <i class="fas fa-house"></i>
+            </a>
+
+            <a href="socialchat.html">
+                <i class="fas fa-comments"></i>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-user"></i>
+            </a>
+
+        </div>
+ <a href="#" id="logoutBtn">
+    <i class="fas fa-right-from-bracket"></i>
+</a>
+    </nav>
+
+    <!-- Editor -->
+
+    <main class="editor-container">
+
+        <div class="editor-card">
+
+            <div class="editor-header">
+
+                <h1>Share Your Career Journey</h1>
+
+                <p>
+                    Inspire others by sharing your experiences,
+                    challenges, lessons and achievements.
+                </p>
+
+            </div>
+
+            <!-- Title -->
+
+            <div class="form-group">
+
+                <label>Story Title</label>
+
+                <input
+                type="text"
+                id="storyTitle"
+                placeholder="Example: How I Got My First Software Internship">
+
+            </div>
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label>Career Category</label>
+
+                <select id="storyCategory">
+
+                    <option>
+                        Software Development
+                    </option>
+
+                    <option>
+                        Data Science
+                    </option>
+
+                    <option>
+                        Cyber Security
+                    </option>
+
+                    <option>
+                        UI/UX Design
+                    </option>
+
+                    <option>
+                        Cloud Computing
+                    </option>
+
+                    <option>
+                        Government Jobs
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- Tags -->
+
+            <div class="form-group">
+
+                <label>Tags</label>
+
+                <input
+                type="text"
+                id="storyTags"
+                placeholder="#Java #SpringBoot #Internship">
+
+            </div>
+
+            <!-- Cover Image -->
+
+            <div class="form-group">
+
+                <label>Cover Image</label>
+
+                <input
+                type="file"
+                id="storyImage">
+
+            </div>
+
+            <!-- Story Content -->
+
+            <div class="form-group">
+
+                <label>Your Story</label>
+
+                <textarea
+                id="storyContent"
+                placeholder="Share your journey, struggles, achievements, lessons learned, roadmap and advice..."
+                ></textarea>
+
+            </div>
+
+            <!-- Actions -->
+
+            <div class="editor-actions">
+
+                <button
+                class="draft-btn"
+                onclick="saveDraft()">
+
+                    Save Draft
+
+                </button>
+
+                <button
+                class="publish-btn"
+                onclick="publishStory()">
+
+                    Publish Story
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<script src="socialstory.js"></script>
+
+</body>
+</html>

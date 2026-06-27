@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story View - ShareUrStory</title>
+
+    <link rel="stylesheet" href="socialstoryview.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fas fa-book-open"></i>
+
+            <span>ShareUrStory</span>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="socialhome.html">
+                <i class="fas fa-house"></i>
+            </a>
+
+            <a href="socialchat.html">
+                <i class="fas fa-comments"></i>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-user"></i>
+            </a>
+
+        </div>
+ <a href="#" id="logoutBtn">
+    <i class="fas fa-right-from-bracket"></i>
+</a>
+    </nav>
+
+    <!-- Story Container -->
+
+    <main class="story-container">
+
+        <!-- Story Header -->
+
+        <section class="story-hero">
+
+            <div class="story-category">
+                Software Development
+            </div>
+
+            <h1 id="storyTitle">
+                How I Got My First Internship
+            </h1>
+
+            <p class="story-subtitle">
+
+                My journey from beginner to internship offer.
+
+            </p>
+
+        </section>
+
+        <!-- Author -->
+
+        <section class="author-card">
+
+            <img
+            src="https://i.pravatar.cc/150?img=5"
+            alt="Author">
+
+            <div>
+
+                <h3>Sameera</h3>
+
+                <p>
+                    Aspiring Software Developer
+                </p>
+
+            </div>
+
+            <button class="follow-btn">
+
+                Follow
+
+            </button>
+
+        </section>
+
+        <!-- Story Content -->
+
+        <section class="story-content">
+
+            <p id="storyContent">
+
+                I started my development journey by
+                learning HTML and CSS. Initially I
+                struggled to understand layouts and
+                responsive design...
+
+            </p>
+
+        </section>
+
+        <!-- Actions -->
+
+        <section class="story-actions">
+
+            <button id="likeBtn">
+
+                ❤️ Like
+                <span id="likeCount">
+                    0
+                </span>
+
+            </button>
+
+            <button id="saveBtn">
+
+                🔖 Save
+
+            </button>
+
+            <button id="shareBtn">
+
+                📤 Share
+
+            </button>
+
+        </section>
+
+        <!-- Comments -->
+
+        <section class="comments-section">
+
+            <h2>
+                Discussion
+            </h2>
+
+            <div class="comment-box">
+
+                <textarea
+                id="commentInput"
+                placeholder="Ask a question or share your thoughts..."></textarea>
+
+                <button
+                id="commentBtn">
+
+                    Comment
+
+                </button>
+
+            </div>
+
+            <div
+            id="commentsContainer">
+
+                <div class="comment">
+
+                    <img src="https://i.pravatar.cc/100?img=12">
+
+                    <div>
+
+                        <h4>Rahul</h4>
+
+                        <p>
+
+                            This story motivated me to
+                            continue learning Java.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Related Stories -->
+
+        <section class="related-stories">
+
+            <h2>
+                Related Stories
+            </h2>
+
+            <div class="related-grid">
+
+                <div class="related-card">
+
+                    <h3>
+
+                        Learning Spring Boot
+                        From Scratch
+
+                    </h3>
+
+                    <p>
+
+                        My roadmap to backend
+                        development.
+
+                    </p>
+
+                </div>
+
+                <div class="related-card">
+
+                    <h3>
+
+                        Cracking Technical Interviews
+
+                    </h3>
+
+                    <p>
+
+                        Lessons from 30 interviews.
+
+                    </p>
+
+                </div>
+
+                <div class="related-card">
+
+                    <h3>
+
+                        Frontend Developer Journey
+
+                    </h3>
+
+                    <p>
+
+                        From HTML to React.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="socialstoryview.js"></script>
+
+</body>
+</html>
